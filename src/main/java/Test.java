@@ -31,7 +31,7 @@ public class Test {
 			// System.out.println(String.valueOf(3d).replaceAll(".0", ""));
 			List<Image> lstImage=new ArrayList<Image>();
 			Document doc = Jsoup.connect(
-					"https://www.wallpaperflare.com/search?wallpaper=nature")
+					"https://www.wallpaperflare.com/search?wallpaper=nature&page=2")
 					.userAgent(
 							"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36")
 					.header("accept",
@@ -89,7 +89,7 @@ public class Test {
 				
 				
 			}
-			writeDataLineByLine("C:\\Users\\longtn\\Downloads\\naruto\\anc.csv", lstImage);
+			writeDataLineByLine("C:\\Users\\longtn\\Downloads\\nature2\\anc.csv", lstImage);
 //
 //			 File file = new File("C:\\Users\\longtn\\Downloads\\results.html");
 //			
