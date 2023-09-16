@@ -72,7 +72,7 @@ public class Zazle extends JFrame {
 		scrollPane.setBounds(67, 143, 553, 188);
 		contentPane.add(scrollPane);
 		
-				JTextArea textArea = new JTextArea();
+			final JTextArea textArea = new JTextArea();
 				scrollPane.setViewportView(textArea);
 
 		textField = new JTextField();

@@ -89,7 +89,7 @@ public class Test {
 				
 				
 			}
-			writeDataLineByLine("C:\\Users\\longtn\\Downloads\\naruto\\anc.csv", lstImage);
+			writeDataLineByLine("C:\\Users\\longtn\\Downloads\\nature\\anc.csv", lstImage);
 //
 //			 File file = new File("C:\\Users\\longtn\\Downloads\\results.html");
 //			
