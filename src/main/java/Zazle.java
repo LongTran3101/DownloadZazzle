@@ -38,6 +38,7 @@ public class Zazle extends JFrame {
 	private JPanel contentPane;
 	private static JTextField textField;
 	private static JTextField textField_1;
+	private static JTextField Useragent;
 
 	/**
 	 * Launch the application.
@@ -124,6 +125,12 @@ public class Zazle extends JFrame {
 		textField_1.setBounds(257, 56, 361, 32);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
+		
+		Useragent = new JTextField();
+		Useragent.setText("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36");
+		Useragent.setBounds(77, 99, 485, 20);
+		contentPane.add(Useragent);
+		Useragent.setColumns(10);
 	}
 
 	public static void download(String line,int i) {
@@ -131,8 +138,7 @@ public class Zazle extends JFrame {
 
 			// System.out.println(String.valueOf(3d).replaceAll(".0", ""));
 
-			Document doc = Jsoup.connect(line).userAgent(
-					"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36")
+			Document doc = Jsoup.connect(line).userAgent(Useragent.getText())
 					.header("cookie", textField.getText())
 					// .header("x-csrf-token", "2418afe1a459f661")
 					.header("authority", "www.zazzle.com")
